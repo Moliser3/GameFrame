@@ -1,0 +1,22 @@
+namespace Moliser3
+{
+    using UnityEngine;
+
+    #ROOTNAMESPACEBEGIN#
+    public class #SCRIPTNAME# : MonoBehaviour
+    {
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
+        {
+            #NOTRIM#
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            #NOTRIM#
+        }
+    }
+    #ROOTNAMESPACEEND#
+    //D:\Unity\6000.2.9f1\Editor\Data\Resources\ScriptTemplates
+}

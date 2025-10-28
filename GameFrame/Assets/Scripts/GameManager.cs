@@ -1,14 +1,31 @@
-using UnityEngine;
+using System;
+using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
-{    
-    void Start()
+namespace Moliser3
+{
+    using UnityEngine;
+
+
+    public class GameManager : MonoBehaviour
     {
-        
-    }
-    
-    void Update()
-    {
-        
+        public static GameManager GM;
+
+        private void Awake()
+        {
+            if (GM == null)
+            {
+                GM = this;
+                DontDestroyOnLoad(this);
+            }
+        }
+
+        void Start()
+        {
+            //SceneManager.LoadScene("Level_0");
+        }
+
+        void Update()
+        {
+        }
     }
 }
